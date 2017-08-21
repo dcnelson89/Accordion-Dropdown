@@ -2,7 +2,7 @@
 #                                                            #
 #               CSS Accordion for MONO	                     #
 #                                                            #
-#     Example: http://www.trentdirectfurniture.co.uk/faq     #
+#   Example: https://www.carelinknel.co.uk/equipment/faqs7   #
 #                                                            #
 --------------------------------------------------------------
 
@@ -127,7 +127,7 @@
 
 	jQuery('.accordion-section-title').click(function(e) {
 		// Grab current anchor value
-		var currentAttrValue = jQuery(this).attr('href');
+		var currentAttrValue = jQuery(this).attr('data-acc');
 
 		if(jQuery(e.target).is('.active')) {
 			close_accordion_section();
