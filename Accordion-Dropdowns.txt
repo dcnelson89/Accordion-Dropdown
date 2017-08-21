@@ -16,7 +16,7 @@
 
   <!-- COPY/PASTE START HERE -->
   <div class="accordion-section">
-	<a class="accordion-section-title" href="#accordion-1">
+	<a class="accordion-section-title" data-acc="#accordion-1">
 	<!-- TITLE -->
 		This is the title?
 	</a>
@@ -30,7 +30,7 @@
   <!-- COPY/PASTE TO END HERE -->
 
   <div class="accordion-section">
-	<a class="accordion-section-title" href="#accordion-2">
+	<a class="accordion-section-title" data-acc="#accordion-2">
 
 	<!--  **TITLE** -->
 		Remember to increment the two values as noted above?
@@ -40,7 +40,7 @@
 	  <!-- CONTENT -->
 	  Here is that reminder again. It is crucial to increase these numbers.<br/>
 	  <br/>
-	  Remember to increment href="#accordion-#" AND id="accordion-#" for each new accordion section.<br/>
+	  Remember to increment data-acc="#accordion-#" AND id="accordion-#" for each new accordion section.<br/>
 	  <br/>
 	  Also, here's an image. <br/>
 	  <img src="http://uksites.nts.web.com/v5/imgs/dashboard/announcements/mono.png">
@@ -89,6 +89,7 @@
 	font-size:1.200em;
 	text-shadow:0px 1px 0px #1a1a1a;
 	color:#fff;
+	cursor:pointer;
 }
 
 .accordion-section-title.active, .accordion-section-title:hover {
@@ -116,7 +117,7 @@
 #####################################################
 
 
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
   jQuery(document).ready(function() {
 	function close_accordion_section() {
